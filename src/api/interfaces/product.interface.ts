@@ -18,14 +18,8 @@ export type Size = 'XS' | 'S' | 'M' | 'L' | 'XL' | 'XXL';
 
 export type Gender = 'kid' | 'men' | 'women' | 'unisex';
 
-export enum Email {
-    Test1GoogleCOM = "test1@google.com",
-}
+export type Email = "test1@google.com";
 
-export enum FullName {
-    TestOne = "Test One",
-}
+export type FullName = "Test One";
 
-export enum Role {
-    Admin = "admin",
-}
+export type Role = "admin";

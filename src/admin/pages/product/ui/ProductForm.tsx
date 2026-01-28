@@ -8,7 +8,7 @@ import type { Product, Size } from '@/api/interfaces/product.interface';
 import { X, SaveAll, Tag, Plus, Upload } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router';
-import { set, useForm } from 'react-hook-form'
+import { useForm } from 'react-hook-form'
 import { cn } from '@/lib/utils';
 
 interface Props {
@@ -54,11 +54,11 @@ export const ProductForm = ({ title, subTitle, product, onSubmit, isPending }: P
     setValue('tags',Array.from(newTagSet));
   };
 
-  const removeTag = (tag: string) => {
-    const newTagSet = new Set(getValues('tags'));
-    newTagSet.delete(tag);
-    setValue('tags',Array.from(newTagSet));
-  };
+  // const removeTag = (tag: string) => {
+  //   const newTagSet = new Set(getValues('tags'));
+  //   newTagSet.delete(tag);
+  //   setValue('tags',Array.from(newTagSet));
+  // };
 
   const addSize = (size: Size) => {
     const sizeSet = new Set( getValues('sizes') );

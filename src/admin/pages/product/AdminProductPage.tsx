@@ -1,6 +1,6 @@
 // https://github.com/Klerith/bolt-product-editor
 
-import { data, Navigate, useNavigate, useParams } from 'react-router';
+import { Navigate, useNavigate, useParams } from 'react-router';
 
 import { useProduct } from '@/admin/hooks/useProduct';
 import { CustomFullScreenLoading } from '@/components/custom/CustomFullScreenLoading';
